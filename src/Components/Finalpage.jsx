@@ -27,7 +27,7 @@ function Finalpage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, type: "spring" }}
-            whileHover={{ scale: 1.02 }}
+            
             className="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 w-full max-w-md text-center relative overflow-hidden"
           >
             {/* Glow effect behind the card */}

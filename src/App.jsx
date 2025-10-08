@@ -34,23 +34,35 @@ function App() {
   }
 
   useEffect(() => {
-    if (result >= 1000) {
-      setmessage('Great job! Your total count is looking strong 💪')
+    if (result >= 5000) {
+      setmessage('🏆 Incredible! You’ve reached a legendary score! React Master unlocked 🚀🔥');
+    } else if (result >= 2500) {
+      setmessage('💫 Amazing work! You’re dominating the counter like a true pro ⚡');
+    } else if (result >= 1500) {
+      setmessage('🌟 Excellent! You’re showing serious dedication and skill 💪');
+    } else if (result >= 1000) {
+      setmessage('🔥 Great job! Your total count is looking super strong 💥');
+    } else if (result >= 750) {
+      setmessage('⚔️ Impressive progress! You’re pushing limits and getting better every click 🧠');
     } else if (result >= 500) {
-      setmessage('Your score is looking strong 👌 , but you still need to improve it.')
+      setmessage('👌 Nice! Your score is looking strong, but you can go even higher! 🚀');
+    } else if (result >= 250) {
+      setmessage('💖 Great effort! Keep it up and aim for that next milestone ⭐');
     } else if (result >= 100) {
-      setmessage('your score is looking good ❤️')
+      setmessage('❤️ Good score! You’re making steady progress — consistency wins 💪');
     } else if (result >= 50) {
-      setmessage('your score is looking nice 🤩')
+      setmessage('🤩 Nice work! You’re getting the hang of it — keep clicking!');
     } else if (result >= 25) {
-      setmessage('your score is looking great ⭐')
+      setmessage('🌈 Great start! You’re warming up beautifully ⭐');
     } else if (result >= 10) {
-      setmessage('your score is looking better 👍')
+      setmessage('👍 Your score is improving — keep pushing forward 💥');
+    } else if (result > 0) {
+      setmessage(`🧮 Your score is ${result}. Keep going, every tap counts! 💫`);
+    } else {
+      setmessage('⚡ Let’s start counting! Click + to begin your React journey 💥');
     }
-    else {
-      setmessage(`you score is ${result} please increase your score.`)
-    }
-  })
+  });
+
 
   const [message, setmessage] = useState('hello');
 
@@ -74,7 +86,7 @@ function App() {
   return (
 
     <>
-      <counterContext.Provider value={{ result, setResult, message, minus, resetbtn , plus }}>
+      <counterContext.Provider value={{ result, setResult, message, minus, resetbtn, plus }}>
         <div>
           <Counter />
         </div>
