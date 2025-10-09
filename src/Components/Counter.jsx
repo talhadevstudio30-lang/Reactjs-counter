@@ -105,7 +105,7 @@ const Counter = () => {
 
             {/* Footer */}
             < div className="grid justify-center items-center pl-1.5 pt-1 pb-1 p-1.5" >
-                <footer className="bg-white text-xl md:text-2xl ml-1.5 rounded-2xl pt-2.5 pl-3.5 md:pl-4.5 md:pr-4.5 pr-3.5 pb-2.5 text-center" data-aos="fade-up"
+                <footer className="bg-white text-xl md:text-2xl  rounded-2xl pt-2.5 pl-3.5 md:pl-4.5 md:pr-4.5 pr-3.5 pb-2.5 text-center" data-aos="fade-up"
                     data-aos-delay="100">
                     In this section you can check your total counters
                 </footer>

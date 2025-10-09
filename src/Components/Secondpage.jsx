@@ -47,7 +47,7 @@ function Secondpage() {
         {/* Footer Section */}
         <div
           data-aos="fade-up"
-          data-aos-offset="100"
+          data-aos-offset="300"
           className="grid justify-center items-center pt-2 pb-3"
         >
           <footer className="bg-white text-xl md:text-2xl rounded-2xl px-6 py-3 text-center shadow-md hover:shadow-lg transition duration-300">
