@@ -7,7 +7,7 @@ function Secondpage() {
   const value = useContext(counterContext);
 
   useEffect(() => {
-    AOS.init({ duration: 500, once: true, easing: 'ease-in' });
+    AOS.init({ once: true, easing: 'ease-in' });
   }, []);
 
   return (
@@ -16,11 +16,13 @@ function Secondpage() {
         <div className="min-h-screen scroll-smooth flex items-center justify-center px-4">
           {/* Card Section */}
           <div
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
+             data-aos-delay="50"
             className="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 w-full max-w-md text-center"
           >
             <h1
               data-aos="fade-up"
+               data-aos-delay="100"
               className="text-3xl font-semibold mb-4 text-indigo-600" 
             >
               📊 Total Counter
@@ -28,7 +30,7 @@ function Secondpage() {
 
             <div
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="150"
               className="text-6xl font-extrabold text-indigo-700 mb-6"
             >
               {value.result}
@@ -36,7 +38,7 @@ function Secondpage() {
 
             <div
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               className="bg-indigo-100 rounded-xl p-4"
             >
               <p className="text-indigo-700 font-medium">{value.message}</p>

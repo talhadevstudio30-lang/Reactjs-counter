@@ -19,7 +19,7 @@ function Frontpage() {
       <div className="flex justify-center items-center">
         <header
           className="bg-white shadow-md w-full lg:w-4xl scroll-smooth rounded-3xl"
-          data-aos="fade-down"
+          data-aos="zoom-in"
           data-aos-delay="100"
         >
           <div className="max-w-6xl mx-auto px-3 py-4 text-center flex items-center justify-between">

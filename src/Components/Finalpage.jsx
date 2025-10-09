@@ -14,6 +14,7 @@ function Finalpage() {
       duration: 800,
       once: true,
       easing: "ease-in-out",
+      //  mirror: true,
     });
   }, []);
 
@@ -24,10 +25,8 @@ function Finalpage() {
       <div>
         <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center px-4">
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, type: "spring" }}
-            
+             data-aos="zoom-in"
+                data-aos-delay="50"
             className="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 w-full max-w-md text-center relative overflow-hidden"
           >
             {/* Glow effect behind the card */}
@@ -51,7 +50,7 @@ function Finalpage() {
                   boxShadow: "0px 0px 15px rgba(99,102,241,0.5)",
                 }}
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="150"
                 whileTap={{ scale: 0.95 }}
                 className="border-2 bg-indigo-100 px-8 py-2 border-indigo-400 rounded-2xl transition duration-100 text-indigo-700"
               >
@@ -67,7 +66,7 @@ function Finalpage() {
                     boxShadow: "0px 0px 15px rgba(99,102,241,0.6)",
                   }}
                   data-aos="fade-up"
-                  data-aos-delay="300"
+                  data-aos-delay="200"
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 250, damping: 15 }}
                   onClick={value.reset}
@@ -80,7 +79,7 @@ function Finalpage() {
 
             <motion.div
                data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="300"
               className="bg-indigo-100 rounded-2xl p-4 mt-4 relative z-10 hover:bg-indigo-200 transition-all duration-100"
             >
               <p className="text-indigo-700 font-medium">

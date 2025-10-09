@@ -27,8 +27,8 @@ const Counter = () => {
             {/* Main Counter Section */}
             <div className="min-h-screen flex items-center justify-center p-6">
                 <motion.div
-                    data-aos="fade-up"
-
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
                     className="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 w-full max-w-sm text-center relative overflow-hidden"
                 >
                     {/* Decorative Glow */}
